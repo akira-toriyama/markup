@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
+    "build": "yarn qualityCheck && next build",
     "qualityCheck": "run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "jest --testPathIgnorePatterns .gitignore",
@@ -23,7 +24,7 @@
   "devDependencies": {
     "@bird-studio/eslint-config": "1.2.1",
     "@bird-studio/interactive-message": "1.1.3",
-    "@bird-studio/js-config": "2.0.1",
+    "@bird-studio/js-config": "2.0.2",
     "@bird-studio/stylelint-config": "1.1.0",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/github": "8.0.2",
