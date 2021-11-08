@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "yarn qualityCheck && next build",
+    "deploy:vercel": "yarn qualityCheck && next build",
     "qualityCheck": "run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "jest --testPathIgnorePatterns .gitignore",
@@ -34,6 +34,7 @@
     "@types/react": "17.0.34",
     "@types/styled-components": "5.1.15",
     "babel-plugin-jsx-remove-data-test-id": "3.0.0",
+    "babel-plugin-styled-components": "1.13.3",
     "conventional-changelog-conventionalcommits": "4.6.1",
     "eslint": "<8.0.0",
     "eslint-config-next": "12.0.2",
