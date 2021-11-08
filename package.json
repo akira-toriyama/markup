@@ -1,0 +1,49 @@
+{
+  "name": "next-tpl",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "qualityCheck": "run-s qualityCheck:*",
+    "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
+    "qualityCheck:unitTest": "jest --testPathIgnorePatterns .gitignore",
+    "qualityCheck:redundancy": "jscpd .",
+    "qualityCheck:findDeadCode": "ts-prune -e",
+    "qualityCheck:esLint": "eslint --ignore-path .gitignore .",
+    "qualityCheck:fmt": "prettier  --check --ignore-path .gitignore .",
+    "qualityCheck:stylesLint": "stylelint --fix --ignore-path .gitignore '**/styles.ts'",
+    "prepare": "git config --local core.hooksPath .githooks"
+  },
+  "dependencies": {
+    "next": "12.0.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "5.3.3"
+  },
+  "devDependencies": {
+    "@bird-studio/eslint-config": "1.2.1",
+    "@bird-studio/interactive-message": "1.1.3",
+    "@bird-studio/js-config": "1.13.1",
+    "@bird-studio/stylelint-config": "1.1.0",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.2",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/react-hooks": "7.0.2",
+    "@types/jest": "27.0.2",
+    "@types/react": "17.0.34",
+    "@types/styled-components": "5.1.15",
+    "babel-plugin-jsx-remove-data-test-id": "3.0.0",
+    "conventional-changelog-conventionalcommits": "4.6.1",
+    "eslint": "<8.0.0",
+    "eslint-config-next": "12.0.2",
+    "jest": "27.3.1",
+    "jscpd": "3.3.26",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.4.1",
+    "semantic-release": "18.0.0",
+    "stylelint": "14.0.1",
+    "ts-jest": "27.0.7",
+    "ts-prune": "0.10.1",
+    "typescript": "4.4.4"
+  }
+}
