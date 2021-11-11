@@ -5,9 +5,6 @@
   <a href="https://gitmoji.dev">
     <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
   </a>
-  <a href="https://codecov.io/gh/akira-toriyama/next.js-tpl">
-    <img src="https://codecov.io/gh/akira-toriyama/next.js-tpl/branch/main/graph/badge.svg?token=1Y8LEB2EAH"/>
-  </a>
 </p>
 
 # 本の種類
