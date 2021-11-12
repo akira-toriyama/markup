@@ -1,3 +1,4 @@
+import "destyle.css";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import React from "react";
