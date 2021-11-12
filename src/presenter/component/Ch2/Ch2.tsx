@@ -73,6 +73,7 @@ export const Ch2: React.VFC = () => {
       <S.Section1Area></S.Section1Area>
       <S.Section2Area></S.Section2Area>
       <S.Section3Area></S.Section3Area>
+      <S.FooterArea></S.FooterArea>
     </S.Ch2Area>
   );
 };
