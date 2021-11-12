@@ -1,4 +1,4 @@
-import "destyle.css";
+// import "destyle.css";
 import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
