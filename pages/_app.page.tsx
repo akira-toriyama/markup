@@ -1,4 +1,5 @@
 import "destyle.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import React from "react";
