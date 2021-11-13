@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./styles";
 import { Img } from "~/presenter/lib/Img";
 
-export const Section1: React.VFC = () => {
+export const Product: React.VFC = () => {
   return (
     <S.Area>
       <>
