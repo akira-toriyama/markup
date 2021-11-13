@@ -1,10 +1,10 @@
 import "destyle.css";
-import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
+// import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import React from "react";
 import { ErrorBoundary } from "~/presenter/component/ErrorBoundary";
-fontawesomeConfig.autoAddCss = false;
+// fontawesomeConfig.autoAddCss = true;
 
 const Page: NextPage<AppProps> = (props) => (
   <ErrorBoundary>
