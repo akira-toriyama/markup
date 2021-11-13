@@ -2,7 +2,7 @@ module.exports = {
   interactiveMessageConfig: {
     fetchMyIssuesParam: {
       owner: "akira-toriyama",
-      repo: "next.js-tpl",
+      repo: "css-grid-layout",
       state: "open",
       assignUser: "akira-toriyama",
     },
