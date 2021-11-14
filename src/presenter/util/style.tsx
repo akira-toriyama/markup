@@ -1,9 +1,4 @@
 /**
- * style
- */
-import "destyle.css";
-
-/**
  * fontawesome
  *
  * https://fontawesome.com/v6.0/docs/web/use-with/react/use-with#getting-font-awesome-css-to-work
