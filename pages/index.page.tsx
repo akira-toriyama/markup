@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Link } from "~/presenter/lib/Link";
+import { Link } from "~/presenter/component/lib/Link";
 
 const Page: NextPage = () => (
   <ul>
