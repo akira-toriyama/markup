@@ -3798,11 +3798,6 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
-destyle.css@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/destyle.css/-/destyle.css-3.0.0.tgz#0d151e33dc3b7e4d6488114d96a8fa0ad4bc50e7"
-  integrity sha512-NLkxtcN2M4F9kxzqgtam4/5dXLOqrGG2JrOhOBiO0tM3kzJlkeM5ZVEn6G9YSRWLet7vMCCdCVdM6a0YC7sHcg==
-
 detect-newline@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
