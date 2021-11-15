@@ -29,7 +29,7 @@
     "styled-components": "5.3.3"
   },
   "devDependencies": {
-    "@bird-studio/eslint-config": "1.2.1",
+    "@bird-studio/eslint-config": "1.2.2",
     "@bird-studio/interactive-message": "1.2.1",
     "@bird-studio/js-config": "2.1.1",
     "@bird-studio/stylelint-config": "1.1.0",
