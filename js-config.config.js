@@ -2,7 +2,7 @@ module.exports = {
   interactiveMessageConfig: {
     fetchMyIssuesParam: {
       owner: "akira-toriyama",
-      repo: "css-grid-layout",
+      repo: "mark-up",
       state: "open",
       assignUser: "akira-toriyama",
     },
