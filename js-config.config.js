@@ -1,10 +1,15 @@
+const { git } = require("@bird-studio/interactive-message").plugin;
+
+const repo = git.getRepo();
+const owner = git.getOwner();
+
 module.exports = {
   interactiveMessageConfig: {
     fetchMyIssuesParam: {
-      owner: "akira-toriyama",
-      repo: "css-grid-layout",
+      owner,
+      repo,
       state: "open",
-      assignUser: "akira-toriyama",
+      assignUser: owner,
     },
     scope: [
       ...require("fs")
