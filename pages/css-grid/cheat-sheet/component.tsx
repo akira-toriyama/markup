@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
-import { Step1 } from "~/presenter/component/CssGrid/Step1";
+import { CheatSheet } from "~/presenter/component/CssGrid/CheatSheet";
 import { CSR } from "~/presenter/component/lib/CSR";
 
 export const Page: NextPage = () => (
   <CSR>
-    <Step1 />
+    <CheatSheet />
   </CSR>
 );

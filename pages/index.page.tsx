@@ -4,8 +4,8 @@ import { Link } from "~/presenter/component/lib/Link";
 const Page: NextPage = () => (
   <ul>
     <li>
-      <Link href="/css-grid/step1">
-        <a>css-grid/step1</a>
+      <Link href="/css-grid/cheat-sheet">
+        <a>css-grid/cheat-sheet</a>
       </Link>
     </li>
   </ul>

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Area = styled.div`
+  box-sizing: border-box;
   display: grid;
   border: 1px solid black;
-  box-sizing: border-box;
 `;
 
 export const Section = styled.div<{ color: string }>`
-  border: 1px solid black;
   box-sizing: border-box;
   background-color: ${(props) => props.color};
+  border: 1px solid black;
 `;
