@@ -1,14 +1,17 @@
+// jscpd:ignore-start
 import styled from "styled-components";
 import { css } from "styled-components";
 
 export const Txt = styled.p`
-  color: black;
-  font-weight: bold;
   margin: 0;
+  font-weight: bold;
+  color: black;
+
   &::before {
     color: white;
     content: "(";
   }
+
   &::after {
     color: white;
     content: ")";
@@ -22,8 +25,8 @@ type ItemProps = {
 const containerStyle = css`
   box-sizing: border-box;
   display: grid;
-  border: 1px solid black;
   margin: 30px;
+  border: 1px solid black;
 `;
 
 const itemStyle = css`
@@ -64,6 +67,7 @@ export const Item3 = styled.div<ItemProps>`
 
 export const Container4 = styled.div`
   ${containerStyle}
+
   /* 50px  1/6 50px 5/6 */
   grid-template-columns: 50px 1fr 50px 5fr;
 `;
@@ -137,3 +141,4 @@ export const Item9 = styled.div<ItemProps>`
   ${itemStyle}
   background-color: ${(props) => props.color};
 `;
+// jscpd:ignore-end
