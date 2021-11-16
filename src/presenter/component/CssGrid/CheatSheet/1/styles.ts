@@ -28,12 +28,6 @@ type ItemProps = {
   color: string;
 };
 
-export const container1Style = css`
-  display: grid;
-  grid-template-rows: 50px 100px 150px;
-  grid-template-columns: 150px 100px;
-`;
-
 export const Container1 = styled.div`
   display: grid;
   grid-template-rows: 50px 100px 150px;
