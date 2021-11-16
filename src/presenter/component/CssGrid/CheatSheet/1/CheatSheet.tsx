@@ -3,7 +3,7 @@
 import React from "react";
 import * as S from "./styles";
 import { randomColor } from "~/presenter/lib/randomColor";
-import { SyntaxHighlight } from "~/presenter/component/lib/SyntaxHighlight";
+import { CssSyntaxHighlight } from "~/presenter/component/lib/SyntaxHighlight";
 
 export const CheatSheet: React.VFC = () => (
   <>
@@ -21,9 +21,9 @@ export const CheatSheet: React.VFC = () => (
 
 const CssGrid1: React.VFC = () => (
   <S.Section>
-    <SyntaxHighlight>{`display: grid;
-grid - template - rows: 50px 100px 150px;
-grid - template - columns: 150px 100px;`}</SyntaxHighlight>
+    <p>基本的な使い方</p>
+
+    <CssSyntaxHighlight>{S.Container1}</CssSyntaxHighlight>
 
     <S.Container1>
       <S.Item1 color={randomColor()}>
@@ -50,7 +50,9 @@ grid - template - columns: 150px 100px;`}</SyntaxHighlight>
 
 const CssGrid2: React.VFC = () => (
   <S.Section>
-    <SyntaxHighlight>{`display: grid;`}</SyntaxHighlight>
+    <p>最低限の指定</p>
+
+    <CssSyntaxHighlight>{S.Container2}</CssSyntaxHighlight>
 
     <S.Container2>
       <S.Item2 color={randomColor()}>
@@ -73,9 +75,7 @@ const CssGrid3: React.VFC = () => (
       <br />
       余白分伸びる
     </p>
-
-    <SyntaxHighlight>{`display: grid;
-grid-template-columns: 50px 100px 1fr;`}</SyntaxHighlight>
+    <CssSyntaxHighlight>{S.Container3}</CssSyntaxHighlight>
 
     <S.Container3>
       <S.Item3 color={randomColor()}>
@@ -100,8 +100,7 @@ const CssGrid4: React.VFC = () => (
       <br />
     </p>
 
-    <SyntaxHighlight>{`display: grid;
-grid-template-columns: 50px 1fr 50px 5fr;`}</SyntaxHighlight>
+    <CssSyntaxHighlight>{S.Container4}</CssSyntaxHighlight>
 
     <S.Container4>
       <S.Item4 color={randomColor()}>
@@ -128,8 +127,7 @@ const CssGrid5: React.VFC = () => (
       中身に応じて横幅が決まる
     </p>
 
-    <SyntaxHighlight>{`display: grid;
-grid-template-columns: auto auto auto;`}</SyntaxHighlight>
+    <CssSyntaxHighlight>{S.Container5}</CssSyntaxHighlight>
 
     <S.Container5>
       <S.Item5 color={randomColor()}>
@@ -157,8 +155,7 @@ const CssGrid6: React.VFC = () => (
       CssGrid5との違いは、中身に関係なく均等なサイズ
     </p>
 
-    <SyntaxHighlight>{`display: grid;
-grid-template-columns: 1fr 1fr 1fr;`}</SyntaxHighlight>
+    <CssSyntaxHighlight>{S.Container6}</CssSyntaxHighlight>
 
     <S.Container6>
       <S.Item6 color={randomColor()}>
@@ -185,9 +182,7 @@ const CssGrid7: React.VFC = () => (
       <br />
       1列目の内容が大きければ、残り2列は小さくなる
     </p>
-
-    <SyntaxHighlight>{`display: grid;
-grid-template-columns: auto 1fr 1fr;`}</SyntaxHighlight>
+    <CssSyntaxHighlight>{S.Container7}</CssSyntaxHighlight>
 
     <S.Container7>
       <S.Item7 color={randomColor()}>
@@ -219,8 +214,7 @@ const CssGrid8: React.VFC = () => (
   <S.Section>
     <p>repeatで繰り返し</p>
 
-    <SyntaxHighlight>{`display: grid;
-grid-template-columns: repeat(5, 1fr) auto;`}</SyntaxHighlight>
+    <CssSyntaxHighlight>{S.Container8}</CssSyntaxHighlight>
 
     <S.Container8>
       <S.Item8 color={randomColor()}>
@@ -249,8 +243,7 @@ const CssGrid9: React.VFC = () => (
   <S.Section>
     <p>repeatで繰り返し</p>
 
-    <SyntaxHighlight>{`display: grid;
-grid-template-columns: repeat(2, 50px 100px);`}</SyntaxHighlight>
+    <CssSyntaxHighlight>{S.Container9}</CssSyntaxHighlight>
 
     <S.Container9>
       <S.Item9 color={randomColor()}>
