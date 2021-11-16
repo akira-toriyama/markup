@@ -1,11 +1,10 @@
 // jscpd:ignore-start
 import styled from "styled-components";
-import { css } from "styled-components";
 
 export const Section = styled.div`
-  border: 3px solid black;
-  margin: 30px;
   padding: 10px;
+  margin: 30px;
+  border: 3px solid black;
 `;
 
 export const Txt = styled.p`
