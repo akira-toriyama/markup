@@ -1,4 +1,4 @@
-import "~/presenter/util/style";
+import "~/presenter/lib/style";
 import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 import React from "react";
