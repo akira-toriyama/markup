@@ -10,16 +10,6 @@ export const Txt = styled.p`
   margin: 0;
   font-weight: bold;
   color: black;
-
-  &::before {
-    color: white;
-    content: "(";
-  }
-
-  &::after {
-    color: white;
-    content: ")";
-  }
 `;
 
 type ItemProps = {
@@ -151,8 +141,31 @@ export const Item16 = styled(Item)``;
 export const Container17 = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(auto, 2.5rem);
+  grid-auto-rows: minmax(auto, 40px);
   overflow: hidden;
 `;
 
 export const Item17 = styled(Item)``;
+
+export const Container18 = styled.div`
+  display: grid;
+  grid-template-columns: minmax(100px, 50%) 1fr 1fr;
+`;
+
+export const Item18 = styled(Item)``;
+
+export const Container19 = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 100px;
+`;
+
+export const Item19 = styled(Item)``;
+
+export const Container20 = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 100px;
+`;
+
+export const Item20 = styled(Item)``;

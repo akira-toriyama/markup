@@ -7,23 +7,49 @@ import { CssSyntaxHighlight } from "~/presenter/component/lib/SyntaxHighlight";
 
 export const CheatSheet: React.VFC = () => (
   <>
+    <h1>css gridの基本的な使い方</h1>
+    <h2>CssGrid1</h2>
     <CssGrid1 />
+    <h2>CssGrid2</h2>
     <CssGrid2 />
+    <h2>CssGrid3</h2>
     <CssGrid3 />
+    <h2>CssGrid4</h2>
     <CssGrid4 />
+    <h2>CssGrid5</h2>
     <CssGrid5 />
+    <h2>CssGrid6</h2>
     <CssGrid6 />
+    <h2>CssGrid7</h2>
     <CssGrid7 />
+    <h2>CssGrid8</h2>
     <CssGrid8 />
+    <h2>CssGrid9</h2>
     <CssGrid9 />
+    <h2>CssGrid10</h2>
     <CssGrid10 />
+    <h2>CssGrid11</h2>
     <CssGrid11 />
+    <h2>CssGrid12</h2>
     <CssGrid12 />
+    <h2>CssGrid13</h2>
     <CssGrid13 />
+    <h2>CssGrid14</h2>
     <CssGrid14 />
+    <h2>CssGrid15</h2>
     <CssGrid15 />
+    <h2>CssGrid16</h2>
     <CssGrid16 />
+    <h2>CssGrid17</h2>
     <CssGrid17 />
+    <h2>CssGrid18</h2>
+    <CssGrid18 />
+    <h2>CssGrid19</h2>
+    <CssGrid19 />
+    <h2>CssGrid20</h2>
+    <CssGrid20 />
+    <h2>CssGrid21</h2>
+    <CssGrid21 />
   </>
 );
 
@@ -241,7 +267,11 @@ const CssGrid11: React.VFC = () => (
 
 const CssGrid12: React.VFC = () => (
   <S.Section>
-    <p>高さに関しての調整</p>
+    <p>
+      高さに関しての調整
+      <br />
+      grid-template-rows: 80px;とすると2行目の高さが80pxにならない
+    </p>
     <CssSyntaxHighlight>{S.Container12}</CssSyntaxHighlight>
     <S.Container12>
       {[...Array(4)].map((_, k) => (
@@ -336,4 +366,83 @@ const CssGrid17: React.VFC = () => (
   </S.Section>
 );
 
+const CssGrid18: React.VFC = () => (
+  <S.Section>
+    <p>
+      minmax(100px,
+      50%)とは、横幅100pxは必ず確保する。かつ親の幅の50%までは伸びる
+    </p>
+    <CssSyntaxHighlight>{S.Container18}</CssSyntaxHighlight>
+    <S.Container18>
+      {[...Array(6)].map((_, k) => (
+        <S.Item18 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item18>
+      ))}
+    </S.Container18>
+  </S.Section>
+);
+
+const CssGrid19: React.VFC = () => (
+  <S.Section>
+    <p>
+      高さ100px, 幅最小200pxのレイアウトが確保される。
+      <br />
+      画面のサイズに合わせて行に並ぶ量が決まる
+      <br />
+      auto-fill
+      の場合、余ったスペースに最小幅を持った空のトラックを可能な限り追加して埋める（fill
+      する）動作をします。
+    </p>
+    <CssSyntaxHighlight>{S.Container19}</CssSyntaxHighlight>
+    <S.Container19>
+      {[...Array(10)].map((_, k) => (
+        <S.Item19 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item19>
+      ))}
+    </S.Container19>
+  </S.Section>
+);
+
+const CssGrid20: React.VFC = () => (
+  <S.Section>
+    <p>
+      auto-fit
+      の場合、余ったスペースの空の繰り返しトラックが折りたたまれ、空のトラックの幅が0pxとみなされるため、全体を
+      1fr の幅の列で埋めつくされます（fit します）。
+    </p>
+    <CssSyntaxHighlight>{S.Container20}</CssSyntaxHighlight>
+    <S.Container20>
+      {[...Array(10)].map((_, k) => (
+        <S.Item20 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item20>
+      ))}
+    </S.Container20>
+  </S.Section>
+);
+
+const CssGrid21: React.VFC = () => (
+  <S.Section>
+    <p>auto-fillとauto-fitの違い</p>
+
+    <CssSyntaxHighlight>{S.Container19}</CssSyntaxHighlight>
+    <S.Container19>
+      {[...Array(2)].map((_, k) => (
+        <S.Item19 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item19>
+      ))}
+    </S.Container19>
+    <CssSyntaxHighlight>{S.Container20}</CssSyntaxHighlight>
+    <S.Container20>
+      {[...Array(2)].map((_, k) => (
+        <S.Item20 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item20>
+      ))}
+    </S.Container20>
+  </S.Section>
+);
 // jscpd:ignore-end
