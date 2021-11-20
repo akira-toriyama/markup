@@ -20,13 +20,16 @@ export const CheatSheet: React.VFC = () => (
     <CssGrid11 />
     <CssGrid12 />
     <CssGrid13 />
+    <CssGrid14 />
+    <CssGrid15 />
+    <CssGrid16 />
+    <CssGrid17 />
   </>
 );
 
 const CssGrid1: React.VFC = () => (
   <S.Section>
     <p>基本的な使い方</p>
-    Container
     <CssSyntaxHighlight>{S.Container1}</CssSyntaxHighlight>
     <S.Container1>
       {[...Array(6)].map((_, k) => (
@@ -41,7 +44,6 @@ const CssGrid1: React.VFC = () => (
 const CssGrid2: React.VFC = () => (
   <S.Section>
     <p>最低限の指定</p>
-    Container
     <CssSyntaxHighlight>{S.Container2}</CssSyntaxHighlight>
     <S.Container2>
       {[...Array(3)].map((_, k) => (
@@ -80,7 +82,6 @@ const CssGrid4: React.VFC = () => (
       frを合計して母数とし、分割する 1fr + 5fr = 6fr
       <br />
     </p>
-    Container
     <CssSyntaxHighlight>{S.Container4}</CssSyntaxHighlight>
     <S.Container4>
       {[...Array(4)].map((_, k) => (
@@ -99,7 +100,6 @@ const CssGrid5: React.VFC = () => (
       <br />
       中身に応じて横幅が決まる
     </p>
-    Container
     <CssSyntaxHighlight>{S.Container5}</CssSyntaxHighlight>
     <S.Container5>
       <S.Item5 color={randomColor()}>
@@ -125,7 +125,6 @@ const CssGrid6: React.VFC = () => (
       <br />
       CssGrid5との違いは、中身に関係なく均等なサイズ
     </p>
-    Container
     <CssSyntaxHighlight>{S.Container6}</CssSyntaxHighlight>
     <S.Container6>
       <S.Item6 color={randomColor()}>
@@ -179,7 +178,6 @@ const CssGrid7: React.VFC = () => (
 const CssGrid8: React.VFC = () => (
   <S.Section>
     <p>repeatで繰り返し</p>
-    Container
     <CssSyntaxHighlight>{S.Container8}</CssSyntaxHighlight>
     <S.Container8>
       {[...Array(6)].map((_, k) => (
@@ -194,7 +192,6 @@ const CssGrid8: React.VFC = () => (
 const CssGrid9: React.VFC = () => (
   <S.Section>
     <p>repeatで繰り返し</p>
-    Container
     <CssSyntaxHighlight>{S.Container9}</CssSyntaxHighlight>
     <S.Container9>
       {[...Array(4)].map((_, k) => (
@@ -213,7 +210,6 @@ const CssGrid10: React.VFC = () => (
       <br />
       親要素にスペースが余る場合、空のグリッドが作られます
     </p>
-    Container
     <CssSyntaxHighlight>{S.Container10}</CssSyntaxHighlight>
     <S.Container10>
       {[...Array(7)].map((_, k) => (
@@ -232,7 +228,6 @@ const CssGrid11: React.VFC = () => (
       <br />
       親要素にスペースが余る場合、グリッド・アイテムの幅が変わってスペースが埋められます
     </p>
-    Container
     <CssSyntaxHighlight>{S.Container11}</CssSyntaxHighlight>
     <S.Container11>
       {[...Array(2)].map((_, k) => (
@@ -247,7 +242,6 @@ const CssGrid11: React.VFC = () => (
 const CssGrid12: React.VFC = () => (
   <S.Section>
     <p>高さに関しての調整</p>
-    Container
     <CssSyntaxHighlight>{S.Container12}</CssSyntaxHighlight>
     <S.Container12>
       {[...Array(4)].map((_, k) => (
@@ -262,7 +256,6 @@ const CssGrid12: React.VFC = () => (
 const CssGrid13: React.VFC = () => (
   <S.Section>
     <p>縦方向に並べる</p>
-    Container
     <CssSyntaxHighlight>{S.Container13}</CssSyntaxHighlight>
     <S.Container13>
       {[...Array(5)].map((_, k) => (
@@ -271,6 +264,75 @@ const CssGrid13: React.VFC = () => (
         </S.Item13>
       ))}
     </S.Container13>
+  </S.Section>
+);
+
+const CssGrid14: React.VFC = () => (
+  <S.Section>
+    <p>
+      縦方向に並べる
+      <br />
+      grid-template-rows と grid-auto-flow: column;
+      <br />
+      の組み合わせは混乱を招きそう
+    </p>
+    <CssSyntaxHighlight>{S.Container14}</CssSyntaxHighlight>
+    <S.Container14>
+      {[...Array(7)].map((_, k) => (
+        <S.Item14 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item14>
+      ))}
+    </S.Container14>
+  </S.Section>
+);
+
+const CssGrid15: React.VFC = () => (
+  <S.Section>
+    <p>縦横の指定</p>
+    <CssSyntaxHighlight>{S.Container15}</CssSyntaxHighlight>
+    <S.Container15>
+      {[...Array(7)].map((_, k) => (
+        <S.Item15 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item15>
+      ))}
+    </S.Container15>
+  </S.Section>
+);
+
+const CssGrid16: React.VFC = () => (
+  <S.Section>
+    <p>
+      minmax()
+      関数を使うと、グリッドの行や列のサイズを定義する際に、最小サイズを設定してコンテンツに合わせて広げられるようにすることができます。
+    </p>
+    <CssSyntaxHighlight>{S.Container16}</CssSyntaxHighlight>
+    <S.Container16>
+      {[...Array(6)].map((_, k) => (
+        <S.Item16 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item16>
+      ))}
+    </S.Container16>
+  </S.Section>
+);
+
+const CssGrid17: React.VFC = () => (
+  <S.Section>
+    <p>
+      minmax()を使用し、広がらないようにする。hiddenを使いはみ出た分を非表示に
+    </p>
+    <CssSyntaxHighlight>{S.Container17}</CssSyntaxHighlight>
+    <S.Container17>
+      {[...Array(6)].map((_, k) => (
+        <S.Item17 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+          <S.Txt>item{k}</S.Txt>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item17>
+      ))}
+    </S.Container17>
   </S.Section>
 );
 

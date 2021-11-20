@@ -122,3 +122,37 @@ export const Container13 = styled.div`
 `;
 
 export const Item13 = styled(Item)``;
+
+export const Container14 = styled.div`
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-auto-flow: column;
+  grid-auto-columns: 300px 100px;
+`;
+
+export const Item14 = styled(Item)``;
+
+export const Container15 = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr 2fr;
+`;
+
+export const Item15 = styled(Item)``;
+
+export const Container16 = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+`;
+
+export const Item16 = styled(Item)``;
+
+export const Container17 = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, 2.5rem);
+  overflow: hidden;
+`;
+
+export const Item17 = styled(Item)``;
