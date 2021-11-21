@@ -8,6 +8,11 @@ const Page: NextPage = () => (
         <a>css-grid/cheat-sheet</a>
       </Link>
     </li>
+    <li>
+      <Link href="/css-architecture-perfect-guide/cheat-sheet">
+        <a>css-architecture-perfect-guide/cheat-sheet</a>
+      </Link>
+    </li>
   </ul>
 );
 
