@@ -7,9 +7,15 @@ import { CssSyntaxHighlight } from "~/presenter/component/lib/SyntaxHighlight";
 
 export const CheatSheet: React.VFC = () => (
   <>
+    <h1>css gridのベストの使い方</h1>
+    <h2>CssGrid25</h2>
+    <CssGrid25 />
+
     <h1>css gridの基本的な使い方</h1>
     <h2>CssGrid1</h2>
     <CssGrid1 />
+
+    <h1>css gridの使い方</h1>
     <h2>CssGrid2</h2>
     <CssGrid2 />
     <h2>CssGrid3</h2>
@@ -50,6 +56,12 @@ export const CheatSheet: React.VFC = () => (
     <CssGrid20 />
     <h2>CssGrid21</h2>
     <CssGrid21 />
+    <h2>CssGrid22</h2>
+    <CssGrid22 />
+    <h2>CssGrid23</h2>
+    <CssGrid23 />
+    <h2>CssGrid24</h2>
+    <CssGrid24 />
   </>
 );
 
@@ -445,4 +457,112 @@ const CssGrid21: React.VFC = () => (
     </S.Container20>
   </S.Section>
 );
+
+const CssGrid22: React.VFC = () => (
+  <S.Section>
+    <p>gapは、行間,列間の順番</p>
+    <CssSyntaxHighlight>{S.Container22}</CssSyntaxHighlight>
+    <S.Container22>
+      {[...Array(10)].map((_, k) => (
+        <S.Item22 key={k} color={randomColor()}>
+          <S.Txt>item{k}</S.Txt>
+        </S.Item22>
+      ))}
+    </S.Container22>
+  </S.Section>
+);
+
+const CssGrid23: React.VFC = () => (
+  <S.Section>
+    <p>3*3のgridを定義</p>
+    <CssSyntaxHighlight>{S.Container23}</CssSyntaxHighlight>
+    <p>
+      横: 列の1~4
+      <br />
+      縦: 行の1~2
+    </p>
+    <CssSyntaxHighlight>{S.Item23_1}</CssSyntaxHighlight>
+    <p>
+      横: 列の1~3
+      <br />
+      縦: 行の2~3
+    </p>
+    <CssSyntaxHighlight>{S.Item23_2}</CssSyntaxHighlight>
+
+    <S.Container23>
+      <S.Item23_1 color={randomColor()}>
+        <S.Txt>Item23_1</S.Txt>
+      </S.Item23_1>
+      <S.Item23_2 color={randomColor()}>
+        <S.Txt>Item23_2</S.Txt>
+      </S.Item23_2>
+
+      <S.Item23_3 color={randomColor()}>
+        <S.Txt>Item23_3</S.Txt>
+      </S.Item23_3>
+      <S.Item23_3 color={randomColor()}>
+        <S.Txt>Item23_3</S.Txt>
+      </S.Item23_3>
+      <S.Item23_3 color={randomColor()}>
+        <S.Txt>Item23_3</S.Txt>
+      </S.Item23_3>
+      <S.Item23_3 color={randomColor()}>
+        <S.Txt>Item23_3</S.Txt>
+      </S.Item23_3>
+    </S.Container23>
+  </S.Section>
+);
+
+const CssGrid24: React.VFC = () => (
+  <S.Section>
+    <p>areaによる指定</p>
+    <CssSyntaxHighlight>{S.Container24}</CssSyntaxHighlight>
+    <p>行開始番号 / 列開始番号 / 行終了番号 / 列終了番号</p>
+    <CssSyntaxHighlight>{S.Item24_1}</CssSyntaxHighlight>
+
+    <p>行開始番号 / 列開始番号 / 行終了番号 / 列終了番号</p>
+    <CssSyntaxHighlight>{S.Item24_2}</CssSyntaxHighlight>
+
+    <S.Container24>
+      <S.Item24_1 color={randomColor()}>
+        <S.Txt>Item24_1</S.Txt>
+      </S.Item24_1>
+      <S.Item24_2 color={randomColor()}>
+        <S.Txt>Item24_2</S.Txt>
+      </S.Item24_2>
+    </S.Container24>
+  </S.Section>
+);
+
+const CssGrid25: React.VFC = () => (
+  <S.Section>
+    <p>grid-templateで、名前をつける、幅と高さも合わせて指定する</p>
+    <CssSyntaxHighlight>{S.Container25}</CssSyntaxHighlight>
+
+    <p>grid-areaで使用する</p>
+    <CssSyntaxHighlight>{S.Item25_1}</CssSyntaxHighlight>
+    <CssSyntaxHighlight>{S.Item25_2}</CssSyntaxHighlight>
+    <CssSyntaxHighlight>{S.Item25_3}</CssSyntaxHighlight>
+    <CssSyntaxHighlight>{S.Item25_4}</CssSyntaxHighlight>
+
+    <S.Container25>
+      <S.Item25_1 color={randomColor()}>
+        <S.Txt>header</S.Txt>
+      </S.Item25_1>
+
+      <S.Item25_2 color={randomColor()}>
+        <S.Txt>content</S.Txt>
+      </S.Item25_2>
+
+      <S.Item25_3 color={randomColor()}>
+        <S.Txt>sidebar</S.Txt>
+      </S.Item25_3>
+
+      <S.Item25_4 color={randomColor()}>
+        <S.Txt>footer</S.Txt>
+      </S.Item25_4>
+    </S.Container25>
+  </S.Section>
+);
+
 // jscpd:ignore-end

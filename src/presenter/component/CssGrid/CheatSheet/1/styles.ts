@@ -116,16 +116,16 @@ export const Item13 = styled(Item)``;
 export const Container14 = styled.div`
   display: grid;
   grid-template-rows: repeat(3, 150px);
-  grid-auto-flow: column;
   grid-auto-columns: 300px 100px;
+  grid-auto-flow: column;
 `;
 
 export const Item14 = styled(Item)``;
 
 export const Container15 = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
 `;
 
 export const Item15 = styled(Item)``;
@@ -169,3 +169,71 @@ export const Container20 = styled.div`
 `;
 
 export const Item20 = styled(Item)``;
+
+export const Container22 = styled.div`
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 20px 50px;
+`;
+
+export const Item22 = styled(Item)``;
+
+export const Container23 = styled.div`
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+`;
+
+export const Item23_1 = styled(Item)`
+  grid-row-start: 1/2;
+  grid-column: 1/4;
+`;
+
+export const Item23_2 = styled(Item)`
+  grid-row-start: 2/3;
+  grid-column: 1/3;
+`;
+
+export const Item23_3 = styled(Item)``;
+
+export const Container24 = styled.div`
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+`;
+
+export const Item24_1 = styled(Item)`
+  grid-area: 1/1/2/4;
+`;
+
+export const Item24_2 = styled(Item)`
+  grid-area: 2/2/4/4;
+`;
+
+export const Container25 = styled.div`
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header  header  header" 100px
+    "content content sidebar" 300px
+    "footer  footer  _______" 50px /
+    100px 150px 70px;
+`;
+
+export const Item25_1 = styled(Item)`
+  grid-area: header;
+`;
+
+export const Item25_2 = styled(Item)`
+  grid-area: content;
+`;
+
+export const Item25_3 = styled(Item)`
+  grid-area: sidebar;
+`;
+
+export const Item25_4 = styled(Item)`
+  grid-area: footer;
+`;
