@@ -214,12 +214,12 @@ export const Item24_2 = styled(Item)`
 
 export const Container25 = styled.div`
   display: grid;
-  gap: 10px;
   grid-template:
     "header  header  header" 100px
     "content content sidebar" 300px
     "footer  footer  _______" 50px /
     100px 150px 70px;
+  gap: 10px;
 `;
 
 export const Item25_1 = styled(Item)`
