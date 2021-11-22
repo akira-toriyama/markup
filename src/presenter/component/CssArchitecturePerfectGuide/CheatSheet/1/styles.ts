@@ -7,8 +7,8 @@ export const Area = styled.div`
 `;
 
 export const Section = styled.div`
-  margin: 32px 0;
   padding: 8px;
+  margin: 32px 0;
   border: solid 1px black;
 `;
 
@@ -41,6 +41,7 @@ export const _Button = styled(Button)`
 
 export const IconButton = styled(Button)`
   position: relative;
+
   > svg {
     position: absolute;
     top: 50%;
