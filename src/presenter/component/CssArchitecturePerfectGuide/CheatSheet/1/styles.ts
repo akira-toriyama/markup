@@ -1,5 +1,5 @@
 // jscpd:ignore-start
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Area = styled.div`
   padding: 8px;
@@ -12,7 +12,7 @@ export const Section = styled.div`
   border: solid 1px black;
 `;
 
-export const Button = styled.a`
+const buttonStyle = css`
   display: inline-block;
   width: 300px;
   max-width: 100%;
@@ -34,19 +34,42 @@ export const Button = styled.a`
   }
 `;
 
+export const Button = styled.a`
+  ${buttonStyle}
+`;
+
 export const _Button = styled(Button)`
   width: auto;
   min-width: 300px;
 `;
 
-export const IconButton = styled(Button)`
+export const IconButton = styled.a`
+  ${buttonStyle}
   position: relative;
 
   > svg {
     position: absolute;
     top: 50%;
-    right: 0.83em;
+    right: 1rem;
     transform: translateY(-50%);
+  }
+`;
+
+export const NextLink = styled.a`
+  position: relative;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    width: 0.375em;
+    height: 0.375em;
+    content: "";
+    border-top: solid 2px #e25c00;
+    border-right: solid 2px #e25c00;
+    transform: rotate(45deg) translateY(-50%);
   }
 `;
 

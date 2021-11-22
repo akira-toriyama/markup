@@ -9,7 +9,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export const CheatSheet: React.VFC = () => (
   <S.Area>
     <Button />
-    <IConButton />
+    <IconButton />
+    <NextLink />
   </S.Area>
 );
 
@@ -63,7 +64,7 @@ const Button: React.VFC = () => (
   </S.Section>
 );
 
-const IConButton: React.VFC = () => (
+const IconButton: React.VFC = () => (
   <S.Section>
     <h1>アイコン付きボタン</h1>
     <S.IconButton>
@@ -84,6 +85,24 @@ const IConButton: React.VFC = () => (
       <dl>
         <dt>top: 50%; と transform: translateY(-50%);</dt>
         <dd>上下の中央揃え</dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const NextLink: React.VFC = () => (
+  <S.Section>
+    <h1>進む</h1>
+    <S.NextLink href="#">進む</S.NextLink>
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.NextLink}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>transform: rotate(45deg) translateY(-50%)</dt>
+        <dd>回転させて矢印のように見せる</dd>
       </dl>
     </details>
   </S.Section>
