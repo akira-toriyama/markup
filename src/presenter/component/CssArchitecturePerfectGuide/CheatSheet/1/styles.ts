@@ -2,8 +2,8 @@
 import styled from "styled-components";
 
 export const Area = styled.div`
-  margin: 8px;
   padding: 8px;
+  margin: 8px;
 `;
 
 export const Section = styled.div`
