@@ -2,23 +2,14 @@
 import styled from "styled-components";
 
 export const Area = styled.div`
-  display: flex;
-  gap: 16px;
-`;
-
-export const ButtonSection = styled.div`
+  margin: 8px;
   padding: 8px;
-  margin: 16px;
-  text-align: center;
+`;
+
+export const Section = styled.div`
+  margin: 32px 0;
+  padding: 8px;
   border: solid 1px black;
-`;
-
-export const ButtonSectionL = styled(ButtonSection)`
-  text-align: left;
-`;
-
-export const ButtonSectionR = styled(ButtonSection)`
-  text-align: right;
 `;
 
 export const Button = styled.a`
@@ -43,9 +34,19 @@ export const Button = styled.a`
   }
 `;
 
-export const Button2 = styled(Button)`
+export const _Button = styled(Button)`
   width: auto;
   min-width: 300px;
+`;
+
+export const IconButton = styled(Button)`
+  position: relative;
+  > svg {
+    position: absolute;
+    top: 50%;
+    right: 0.83em;
+    transform: translateY(-50%);
+  }
 `;
 
 // jscpd:ignore-end

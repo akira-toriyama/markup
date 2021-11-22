@@ -3,61 +3,90 @@
 import React from "react";
 import * as S from "./styles";
 import { CssSyntaxHighlight } from "~/presenter/component/lib/SyntaxHighlight";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const CheatSheet: React.VFC = () => (
-  <>
-    <h1>ボタン</h1>
-    <CssSyntaxHighlight>{S.Button}</CssSyntaxHighlight>
-    <h2>display: inline-block;</h2>
-    <p>親要素で指定しているtext-align: center;を継承する為使い勝手が良い</p>
-    <S.Area>
-      <S.ButtonSection>
-        <p>テキスト</p>
-        <S.Button href="dummy">ボタン</S.Button>
-      </S.ButtonSection>
-
-      <S.ButtonSectionL>
-        <p>テキスト</p>
-        <S.Button href="dummy">ボタン</S.Button>
-      </S.ButtonSectionL>
-
-      <S.ButtonSectionR>
-        <p>テキスト</p>
-        <S.Button href="dummy">ボタン</S.Button>
-      </S.ButtonSectionR>
-    </S.Area>
-    <h2>width: 300px;</h2>
-    <p>プロジェクトでは、ボタン幅は統一されている場合が多い</p>
-    改行させたく無い場合は、
-    <CssSyntaxHighlight>{S.Button2}</CssSyntaxHighlight>
-    <S.Area>
-      <S.Button href="dummy">
-        改行される改行される改行される改行される改行される改行される
-      </S.Button>
-      <S.Button2 href="dummy">
-        改行されない改行されない改行されない改行されない
-      </S.Button2>
-    </S.Area>
-    <h2>max-width: 100%;</h2>
-    <p>親ボックスからはみ出ないようにする。</p>
-    <h2>padding: 20px 10px;</h2>
-    <p>
-      heightを指定しては、ダメ。長いテキストが入るとはみ出るため
-      <br />
-      長いテキストが入っても最低限の見た目を確保する為にpaddingを指定
-    </p>
-    <h2>border: 2px solid transparent; と border-color: currentColor;</h2>
-    <p>
-      ホバー時に、border:
-      2pxとするとボタンが大きくなるのでダメ。ホバー前から確保する。
-      currentColorは、background-colorと連動が良い。
-    </p>
-    <h2>font-size: 1.125rem;</h2>
-    <p>
-      18pxとしたいが、フォントサイズを大きくしている人などに対応する為。
-      <br />
-      remの基準のルート要素(html要素)のfont-sizeは、16pxなので、それの1.125倍が18px
-    </p>
-  </>
+  <S.Area>
+    <Button />
+    <IConButton />
+  </S.Area>
 );
+
+const Button: React.VFC = () => (
+  <S.Section>
+    <h1>ボタン</h1>
+    <S.Button>Click me!!</S.Button>
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.Button}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>display: inline-block;</dt>
+        <dd>
+          親要素で指定しているtext-align: center;を継承する為使い勝手が良い
+        </dd>
+        <dt>width: 300px;</dt>
+        <dd>
+          プロジェクトでは、ボタン幅は統一されている場合が多い
+          <br />
+          改行させたく無い場合は、
+          <CssSyntaxHighlight>{S._Button}</CssSyntaxHighlight>
+        </dd>
+        <dt>max-width: 100%;</dt>
+        <dd>親ボックスからはみ出ないようにする。</dd>
+
+        <dt>padding: 20px 10px;</dt>
+        <dd>
+          heightを指定しては、ダメ。長いテキストが入るとはみ出るため
+          <br />
+          長いテキストが入っても最低限の見た目を確保する為にpaddingを指定
+        </dd>
+
+        <dt>border: 2px solid transparent; と border-color: currentColor;</dt>
+        <dd>
+          ホバー時に、border:
+          2pxとするとボタンが大きくなるのでダメ。ホバー前から確保する。
+          currentColorは、background-colorと連動が良い。
+        </dd>
+
+        <dt>font-size: 1.125rem;</dt>
+        <dd>
+          18pxとしたいが、フォントサイズを大きくしている人などに対応する為。
+          <br />
+          remの基準のルート要素(html要素)のfont-sizeは、16pxなので、それの1.125倍が18px
+        </dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const IConButton: React.VFC = () => (
+  <S.Section>
+    <h1>アイコン付きボタン</h1>
+    <S.IconButton>
+      Click me!!
+      <FontAwesomeIcon icon={faArrowRight} />
+    </S.IconButton>
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.IconButton}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>position: relative;とposition: absolute;</dt>
+        <dd>この組み合わせでsvg iconの位置を調整する</dd>
+      </dl>
+
+      <dl>
+        <dt>top: 50%; と transform: translateY(-50%);</dt>
+        <dd>上下の中央揃え</dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
 // jscpd:ignore-end
