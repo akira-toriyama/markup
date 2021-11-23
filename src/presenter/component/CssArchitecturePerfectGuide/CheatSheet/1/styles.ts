@@ -73,4 +73,28 @@ export const NextLink = styled.a`
   }
 `;
 
+export const PageTitle = styled.h1`
+  padding: 30px 10px;
+  background-color: #e25c00;
+  color: #ffffff;
+  font-size: 1.75rem;
+  text-align: center;
+`;
+
+export const PageTitleText = styled.span`
+  position: relative;
+  display: inline-block;
+  transform: translateY(-20%);
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80px;
+    background-color: currentColor;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+`;
+
 // jscpd:ignore-end

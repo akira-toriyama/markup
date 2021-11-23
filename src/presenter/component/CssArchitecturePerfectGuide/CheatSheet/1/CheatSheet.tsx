@@ -11,6 +11,7 @@ export const CheatSheet: React.VFC = () => (
     <Button />
     <IconButton />
     <NextLink />
+    <PageTitle />
   </S.Area>
 );
 
@@ -103,6 +104,36 @@ const NextLink: React.VFC = () => (
       <dl>
         <dt>transform: rotate(45deg) translateY(-50%)</dt>
         <dd>回転させて矢印のように見せる</dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const PageTitle: React.VFC = () => (
+  <S.Section>
+    <h1>ページタイトル</h1>
+    <S.PageTitle>
+      <S.PageTitleText>ページタイトル</S.PageTitleText>
+    </S.PageTitle>
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.PageTitle}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>display: inline-block;とtransform: translateY(-20%);</dt>
+        <dd>ページタイトルのテキストを少し上に上げる</dd>
+      </dl>
+      <dl>
+        <dt>left: 50%;とtransform: translateX(-50%);</dt>
+        <dd>
+          左右中央揃え
+          <br />
+          left: 100%;だと一番右
+          <br />
+          left: 0%;だと一番左
+        </dd>
       </dl>
     </details>
   </S.Section>
