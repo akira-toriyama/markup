@@ -107,8 +107,8 @@ export const MediaSection = styled.div`
 `;
 
 export const MediaImgWrapper = styled.figcaption`
-  flex: 0 1 27.58333%;
-  margin-right: 3.33333%;
+  flex: 0 1 27.5833%;
+  margin-right: 3.3333%;
 `;
 
 export const MediaImg = styled.img``;
@@ -116,16 +116,16 @@ export const MediaImg = styled.img``;
 export const MediaBody = styled.div``;
 
 export const MediaTitle = styled.h3`
+  margin-top: 0;
   margin-bottom: 10px;
   font-size: 1.125rem;
   font-weight: bold;
-  margin-top: 0;
 `;
 
 export const MediaTxt = styled.p``;
 
 export const Card = styled.div`
-  box-shadow: 0 3px 6px rgb(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
 `;
 
 export const CardImgWrapper = styled.figcaption`
@@ -137,8 +137,8 @@ export const CardImgWrapper = styled.figcaption`
 export const CardImg = styled.img`
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   width: 100%;
+  transform: translateY(-50%);
 `;
 
 export const CardBody = styled.div`
