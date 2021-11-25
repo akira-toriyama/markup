@@ -1,5 +1,4 @@
 // jscpd:ignore-start
-
 import React from "react";
 import * as S from "./styles";
 import { CssSyntaxHighlight } from "~/presenter/component/lib/SyntaxHighlight";
@@ -12,6 +11,8 @@ export const CheatSheet: React.VFC = () => (
     <IconButton />
     <NextLink />
     <PageTitle />
+    <Media />
+    <Card />
   </S.Area>
 );
 
@@ -124,8 +125,6 @@ const PageTitle: React.VFC = () => (
       <dl>
         <dt>display: inline-block;とtransform: translateY(-20%);</dt>
         <dd>ページタイトルのテキストを少し上に上げる</dd>
-      </dl>
-      <dl>
         <dt>left: 50%;とtransform: translateX(-50%);</dt>
         <dd>
           左右中央揃え
@@ -134,6 +133,102 @@ const PageTitle: React.VFC = () => (
           <br />
           left: 0%;だと一番左
         </dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const Media: React.VFC = () => (
+  <S.Section>
+    <h1>メディア</h1>
+    <S.MediaSection>
+      <S.MediaImgWrapper>
+        <S.MediaImg
+          src="/food_konbini_onigiri.png"
+          alt="コンビニのおにぎり"
+          width="100%"
+        />
+      </S.MediaImgWrapper>
+      <S.MediaBody>
+        <S.MediaTitle>コンビニのおにぎり</S.MediaTitle>
+        <S.MediaTxt>
+          おにぎりの説明 おにぎりの説明 おにぎりの説明 おにぎりの説明
+          おにぎりの説明 おにぎりの説明 おにぎりの説明 おにぎりの説明
+          おにぎりの説明 おにぎりの説明 おにぎりの説明 おにぎりの説明
+        </S.MediaTxt>
+      </S.MediaBody>
+    </S.MediaSection>
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.MediaSection}</CssSyntaxHighlight>
+      <CssSyntaxHighlight>{S.MediaImgWrapper}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>display: flex;とalign-items: center;</dt>
+        <dd>画像と、テキストを横並び&上下中央にしたい場合</dd>
+      </dl>
+      <dl>
+        <dt>flex: 0 1 27.58333%;</dt>
+        <dd>
+          <ul>
+            <li>
+              1番目: flex-grow
+              <br />
+              余白があった場合どのくらい広げるか？ 数字が大きいほうが、広がる
+            </li>
+            <li>
+              2番目: flex-shrink
+              <br />
+              はみ出した場合どのくらい縮めるか？ 数字が小さいほうが、縮む
+            </li>
+            <li>
+              3番目: flex-basis
+              <br />
+              flex-basisは子要素の基準となるサイズを指定します。
+            </li>
+          </ul>
+          <br />
+
+          <br />
+        </dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const Card: React.VFC = () => (
+  <S.Section>
+    <h1>カード</h1>
+    <S.Card>
+      <S.CardImgWrapper>
+        <S.CardImg src="/code.jpg" alt="コード" />
+      </S.CardImgWrapper>
+      <S.CardBody>
+        <S.CardTitle>コード</S.CardTitle>
+        <S.CardTxt>
+          HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML
+        </S.CardTxt>
+      </S.CardBody>
+    </S.Card>
+
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.CardImgWrapper}</CssSyntaxHighlight>
+      <CssSyntaxHighlight>{S.CardImg}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>position: relative; padding-top: 56.25%;</dt>
+        <dd>
+          下記の上下中央揃え用に、position:
+          relative;その場合高さが確保できないので、padding-topで指定
+          56.25にすると おおよそ 16:9
+        </dd>
+        <dt> position: absolute; top: 50%; transform: translateY(-50%);</dt>
+        <dd>上下中央揃え</dd>
       </dl>
     </details>
   </S.Section>
