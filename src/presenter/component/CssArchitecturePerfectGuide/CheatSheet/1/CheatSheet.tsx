@@ -13,6 +13,8 @@ export const CheatSheet: React.VFC = () => (
     <PageTitle />
     <Media />
     <Card />
+    <CardCol3 />
+    <HorizontalTable />
   </S.Area>
 );
 
@@ -202,6 +204,9 @@ const Card: React.VFC = () => (
   <S.Section>
     <h1>カード</h1>
     <S.Card>
+      <S.CardBadge>
+        <S.CardBadgeTxt>New</S.CardBadgeTxt>
+      </S.CardBadge>
       <S.CardImgWrapper>
         <S.CardImg src="/code.jpg" alt="コード" />
       </S.CardImgWrapper>
@@ -213,10 +218,23 @@ const Card: React.VFC = () => (
       </S.CardBody>
     </S.Card>
 
+    <S.CardWithLink href="#">
+      <S.CardImgWrapper>
+        <S.CardImg src="/code.jpg" alt="コード" />
+      </S.CardImgWrapper>
+      <S.CardBody>
+        <S.CardTitle>コード</S.CardTitle>
+        <S.CardTxt>
+          HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML
+        </S.CardTxt>
+      </S.CardBody>
+    </S.CardWithLink>
+
     <details>
       <summary>コード</summary>
       <CssSyntaxHighlight>{S.CardImgWrapper}</CssSyntaxHighlight>
       <CssSyntaxHighlight>{S.CardImg}</CssSyntaxHighlight>
+      <CssSyntaxHighlight>{S.CardBadge}</CssSyntaxHighlight>
     </details>
     <details>
       <summary>解説</summary>
@@ -227,11 +245,126 @@ const Card: React.VFC = () => (
           relative;その場合高さが確保できないので、padding-topで指定
           56.25にすると おおよそ 16:9
         </dd>
-        <dt> position: absolute; top: 50%; transform: translateY(-50%);</dt>
+        <dt>position: absolute; top: 50%; transform: translateY(-50%);</dt>
         <dd>上下中央揃え</dd>
+
+        <dt>
+          border-width: 3.75rem 3.75rem 0 0; border-style: solid; border-color:
+          #e25c00 transparent transparent transparent;
+        </dt>
+        <dd>
+          三角形を作る
+          <br />
+          http://apps.eky.hk/css-triangle-generator/
+        </dd>
       </dl>
     </details>
   </S.Section>
 );
 
+const CardCol3: React.VFC = () => (
+  <S.Section>
+    <h1>3カラム</h1>
+    <S.CardCol3>
+      <S.Card>
+        <S.CardBadge>
+          <S.CardBadgeTxt>New</S.CardBadgeTxt>
+        </S.CardBadge>
+        <S.CardImgWrapper>
+          <S.CardImg src="/code.jpg" alt="コード" />
+        </S.CardImgWrapper>
+        <S.CardBody>
+          <S.CardTitle>コード</S.CardTitle>
+          <S.CardTxt>
+            HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML
+            HTML
+          </S.CardTxt>
+        </S.CardBody>
+      </S.Card>
+      <S.Card>
+        <S.CardBadge>
+          <S.CardBadgeTxt>New</S.CardBadgeTxt>
+        </S.CardBadge>
+        <S.CardImgWrapper>
+          <S.CardImg src="/code.jpg" alt="コード" />
+        </S.CardImgWrapper>
+        <S.CardBody>
+          <S.CardTitle>コード</S.CardTitle>
+          <S.CardTxt>
+            HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML
+            HTML
+          </S.CardTxt>
+        </S.CardBody>
+      </S.Card>
+      <S.Card>
+        <S.CardBadge>
+          <S.CardBadgeTxt>New</S.CardBadgeTxt>
+        </S.CardBadge>
+        <S.CardImgWrapper>
+          <S.CardImg src="/code.jpg" alt="コード" />
+        </S.CardImgWrapper>
+        <S.CardBody>
+          <S.CardTitle>コード</S.CardTitle>
+          <S.CardTxt>
+            HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML HTML
+            HTML
+          </S.CardTxt>
+        </S.CardBody>
+      </S.Card>
+    </S.CardCol3>
+
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.CardCol3}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>特筆事項無し</dt>
+        <dd></dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const HorizontalTable: React.VFC = () => (
+  <S.Section>
+    <h1>水平 テーブル</h1>
+    <S.HorizontalWrapper>
+      <S.HorizontalTable>
+        <tbody>
+          <S.HorizontalTableRow>
+            <S.HorizontalTableHeader>th</S.HorizontalTableHeader>
+            <S.HorizontalTableData>td</S.HorizontalTableData>
+          </S.HorizontalTableRow>
+
+          <S.HorizontalTableRow>
+            <S.HorizontalTableHeader>th</S.HorizontalTableHeader>
+            <S.HorizontalTableData>
+              td td td td td td td td td td td td td td td td td td td td td td
+              td td td td td td td td td td
+            </S.HorizontalTableData>
+          </S.HorizontalTableRow>
+
+          <S.HorizontalTableRow>
+            <S.HorizontalTableHeader>th</S.HorizontalTableHeader>
+            <S.HorizontalTableData>td</S.HorizontalTableData>
+          </S.HorizontalTableRow>
+        </tbody>
+      </S.HorizontalTable>
+    </S.HorizontalWrapper>
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.HorizontalWrapper}</CssSyntaxHighlight>
+      <CssSyntaxHighlight>{S.HorizontalTable}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>横スクロール</dt>
+        <dd>d</dd>
+      </dl>
+    </details>
+  </S.Section>
+);
 // jscpd:ignore-end
