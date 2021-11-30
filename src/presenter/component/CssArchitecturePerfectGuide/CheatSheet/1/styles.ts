@@ -266,9 +266,9 @@ export const HorizontalTableRow = styled.tr`
 
 export const Pager = styled.ul`
   display: flex;
-  list-style: none;
   gap: 8px;
   margin: 0;
+  list-style: none;
 `;
 
 export const PagerItem = styled.li`
