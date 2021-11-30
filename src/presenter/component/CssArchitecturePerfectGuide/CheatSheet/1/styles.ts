@@ -264,4 +264,48 @@ export const HorizontalTableRow = styled.tr`
   }
 `;
 
+export const Pager = styled.ul`
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  margin: 0;
+`;
+
+export const PagerItem = styled.li`
+  margin: 0;
+`;
+
+const pagerItemLinkStyle = {
+  active: css`
+    color: #fff;
+    pointer-events: none;
+    background-color: #e25c00;
+  `,
+  base: css`
+    color: #e25c00;
+  `,
+};
+export const PagerItemLink = styled.a<{ isActive?: boolean }>`
+  /* stylelint-disable */
+  ${(props) =>
+    props.isActive ? pagerItemLinkStyle.active : pagerItemLinkStyle.base}
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  transition: 0.25s;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    background-color: #e25c00;
+    opacity: 75%;
+  }
+  /* stylelint-enable */
+`;
+
 // jscpd:ignore-end

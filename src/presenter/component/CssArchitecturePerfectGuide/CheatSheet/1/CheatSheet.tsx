@@ -3,7 +3,11 @@ import React from "react";
 import * as S from "./styles";
 import { CssSyntaxHighlight } from "~/presenter/component/lib/SyntaxHighlight";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faCaretLeft,
+  faCaretRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const CheatSheet: React.VFC = () => (
   <S.Area>
@@ -15,6 +19,7 @@ export const CheatSheet: React.VFC = () => (
     <Card />
     <CardCol3 />
     <HorizontalTable />
+    <Pager />
   </S.Area>
 );
 
@@ -362,6 +367,45 @@ const HorizontalTable: React.VFC = () => (
       <summary>解説</summary>
       <dl>
         <dt>横スクロール</dt>
+        <dd>d</dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const Pager: React.VFC = () => (
+  <S.Section>
+    <h1>ページャー</h1>
+    <S.Pager>
+      <S.PagerItem>
+        <S.PagerItemLink href="#">
+          <FontAwesomeIcon icon={faCaretLeft} />
+        </S.PagerItemLink>
+      </S.PagerItem>
+      <S.PagerItem>
+        <S.PagerItemLink href="#">1</S.PagerItemLink>
+      </S.PagerItem>
+      <S.PagerItem>
+        <S.PagerItemLink href="#" isActive>
+          2
+        </S.PagerItemLink>
+      </S.PagerItem>
+      <S.PagerItem>
+        <S.PagerItemLink href="#">3</S.PagerItemLink>
+      </S.PagerItem>
+      <S.PagerItemLink href="#">
+        <FontAwesomeIcon icon={faCaretRight} />
+      </S.PagerItemLink>
+    </S.Pager>
+
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.Pager}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>t</dt>
         <dd>d</dd>
       </dl>
     </details>
