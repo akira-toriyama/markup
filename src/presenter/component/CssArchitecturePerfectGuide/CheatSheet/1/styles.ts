@@ -137,7 +137,7 @@ export const CardWithLink = styled.a`
 
   &:focus,
   &:hover {
-    opacity: 75%;
+    opacity: 0.75;
   }
 `;
 
