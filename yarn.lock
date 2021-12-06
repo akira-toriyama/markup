@@ -983,13 +983,6 @@
     inquirer-search-list "1.2.6"
     table "6.7.3"
 
-"@bird-studio/js-config@2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-2.1.1.tgz#8f187ca2e2000c8e79c46edffa9ab5ae826d5e98"
-  integrity sha512-Hqt1UGM5wHzWzCDFukEDDPbc67Bwc4X5f9FsxZ0X+NyTgAr9HJmHqFq3F/9DYN0rEaz27rxtrld0y4POLvv1CA==
-  dependencies:
-    cosmiconfig "7.0.1"
-
 "@bird-studio/js-config@2.1.2":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-2.1.2.tgz#0ba615f654ae580faa0f7d3e35bdf85933066a42"
@@ -997,12 +990,12 @@
   dependencies:
     cosmiconfig "7.0.1"
 
-"@bird-studio/stylelint-config@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@bird-studio/stylelint-config/-/stylelint-config-1.1.2.tgz#b5d7b33b13fc15ec64269a306fd957b826a1b356"
-  integrity sha512-0d33OxBYAboi776DZPeQOv/REkPnsSahe5Y9Jg0srveQ8bS1IftVzE9tjA12iKdqSeGvIDeGu4Au3FCQAxBLXQ==
+"@bird-studio/stylelint-config@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@bird-studio/stylelint-config/-/stylelint-config-1.1.3.tgz#4c260dd66aea1d56c5d982f6bd52a55c6d8b7bb0"
+  integrity sha512-yZHquKDqZFDBDPg/M3GItnVGAIwNikoU0MR1N8cVswX4nWTqBH8/7MIb9aT3+b6GjWROjVL71cwLiyBmfhXZfw==
   dependencies:
-    "@bird-studio/js-config" "2.1.1"
+    "@bird-studio/js-config" "2.1.2"
     "@stylelint/postcss-css-in-js" "0.37.2"
     postcss-syntax "0.36.2"
     stylelint-config-prettier "9.0.3"
