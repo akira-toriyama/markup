@@ -316,11 +316,11 @@ export const TabSection = styled.nav`
 
 export const Tabs = styled.ul`
   display: flex;
+  align-items: center;
   margin: 0;
   list-style: none;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     flex-wrap: nowrap;
@@ -341,7 +341,6 @@ export const TabTxt = styled.span`
   padding-left: 30px;
   margin-bottom: 10px;
   border-bottom: 4px solid #efefef;
-  color: #777;
   text-decoration: none;
   transition: 0.25s;
 
