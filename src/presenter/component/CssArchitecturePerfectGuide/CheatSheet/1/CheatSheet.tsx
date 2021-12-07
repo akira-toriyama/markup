@@ -20,6 +20,7 @@ export const CheatSheet: React.VFC = () => (
     <CardCol3 />
     <HorizontalTable />
     <Pager />
+    <Tab />
   </S.Area>
 );
 
@@ -405,8 +406,66 @@ const Pager: React.VFC = () => (
     <details>
       <summary>解説</summary>
       <dl>
-        <dt>t</dt>
-        <dd>d</dd>
+        <dt>align-items: center;, justify-content: center;</dt>
+        <dd>上下左右 中央</dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const Tab: React.VFC = () => (
+  <S.Section>
+    <h1>タブ</h1>
+    <S.TabSection>
+      <S.Tabs>
+        <S.Tab>
+          <S.TabTxt>TabA</S.TabTxt>
+        </S.Tab>
+        <S.Tab>
+          <S.TabLink>Tab.</S.TabLink>
+        </S.Tab>
+        <S.Tab>
+          <S.TabLink>Tab.</S.TabLink>
+        </S.Tab>
+        <S.Tab>
+          <S.TabLink>Tab.</S.TabLink>
+        </S.Tab>
+        <S.Tab>
+          <S.TabLink>Tab.</S.TabLink>
+        </S.Tab>
+        <S.Tab>
+          <S.TabLink>Tab.</S.TabLink>
+        </S.Tab>
+        <S.Tab>
+          <S.TabLink>Tab.</S.TabLink>
+        </S.Tab>
+        <S.Tab>
+          <S.TabLink>Tab.</S.TabLink>
+        </S.Tab>
+        <S.Tab>
+          <S.TabLink>Tab.</S.TabLink>
+        </S.Tab>
+      </S.Tabs>
+    </S.TabSection>
+
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.TabSection}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>flex-wrap: wrap;</dt>
+        <dd>はみ出ないように折り返し</dd>
+      </dl>
+
+      <dl>
+        <dt>flex-wrap: nowrap;, justify-content: flex-start;</dt>
+        <dd>
+          メディアクエリ適用時にwrapの解除 <br />
+          justify-content:
+          center;を使用している為メディアクエリ適用時左側が切れてしまうのでflex-startを指定
+        </dd>
       </dl>
     </details>
   </S.Section>

@@ -308,4 +308,65 @@ export const PagerItemLink = styled.a<{ isActive?: boolean }>`
   /* stylelint-enable */
 `;
 
+export const TabSection = styled.nav`
+  @media screen and (max-width: 768px) {
+    overflow-x: auto;
+  }
+`;
+
+export const Tabs = styled.ul`
+  display: flex;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+`;
+
+export const Tab = styled.li`
+  margin: 0;
+`;
+
+export const TabTxt = styled.span`
+  display: inline-block;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #efefef;
+  color: #777;
+  text-decoration: none;
+  transition: 0.25s;
+
+  border-bottom-color: currentColor;
+  color: #e25c00;
+  pointer-events: none;
+`;
+
+export const TabLink = styled.a`
+  display: inline-block;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #efefef;
+  color: #777;
+  text-decoration: none;
+  transition: 0.25s;
+
+  &:focus,
+  &:hover {
+    border-bottom-color: currentColor;
+    color: #e25c00;
+    opacity: 0.75;
+  }
+`;
+
 // jscpd:ignore-end
