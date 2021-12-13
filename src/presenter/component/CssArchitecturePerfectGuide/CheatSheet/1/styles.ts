@@ -369,8 +369,8 @@ export const TabLink = styled.a`
 `;
 
 export const CTA = styled.div`
-  padding: 16px 30px 8px 30px;
-  background-color: rgba(221, 116, 44, 0.05);
+  padding: 16px 30px 8px;
+  background-color: rgba(221 116 44 5%);
   border: 1px solid #e25c00;
   text-align: center;
 `;
