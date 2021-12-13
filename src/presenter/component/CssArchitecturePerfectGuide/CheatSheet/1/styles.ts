@@ -368,4 +368,80 @@ export const TabLink = styled.a`
   }
 `;
 
+export const CTA = styled.div`
+  padding: 16px 30px 8px 30px;
+  background-color: rgba(221, 116, 44, 0.05);
+  border: 1px solid #e25c00;
+  text-align: center;
+`;
+
+export const CTATitle = styled.h2`
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid currentColor;
+  color: #e25c00;
+  font-size: 1.5rem;
+  font-weight: bold;
+`;
+
+export const FAQ = styled.div``;
+
+export const FAQQWrapper = styled.dt`
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: content-box;
+  min-height: 45px;
+  padding-left: 60px;
+  margin-bottom: 15px;
+`;
+
+export const FAQAWrapper = styled.dd`
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  box-sizing: content-box;
+  min-height: 45px;
+  padding-left: 60px;
+`;
+
+export const FAQQIcon = styled.span`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-weight: normal;
+  line-height: 45px;
+  text-align: center;
+  background-color: #e25c00;
+  color: #fff;
+`;
+
+export const FAQAIcon = styled.span`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-weight: normal;
+  line-height: 45px;
+  text-align: center;
+  background: #efefef;
+  color: #e25c00;
+`;
+
+export const FAQQTxt = styled.span`
+  padding-top: 12px;
+  font-weight: bold;
+`;
+
+export const FAQATxt = styled.p`
+  margin-bottom: 20px;
+`;
+
 // jscpd:ignore-end

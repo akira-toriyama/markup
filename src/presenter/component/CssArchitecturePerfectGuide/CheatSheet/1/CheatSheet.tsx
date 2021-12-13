@@ -21,6 +21,8 @@ export const CheatSheet: React.VFC = () => (
     <HorizontalTable />
     <Pager />
     <Tab />
+    <CTA />
+    <FAQ />
   </S.Area>
 );
 
@@ -470,4 +472,61 @@ const Tab: React.VFC = () => (
     </details>
   </S.Section>
 );
+
+const CTA: React.VFC = () => (
+  <S.Section>
+    <h1>Call to action</h1>
+    <S.CTA>
+      <S.CTATitle>お気軽にお問い合わせください</S.CTATitle>
+      <p>
+        弊社のサービスや製品のことで気になることがございましたら、お気軽にお問い合わせください
+        <br />
+        <a href="#">→問い合わせする</a>
+      </p>
+    </S.CTA>
+
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.CTA}</CssSyntaxHighlight>
+      <CssSyntaxHighlight>{S.CTATitle}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>なし</dt>
+        <dd></dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const FAQ: React.VFC = () => (
+  <S.Section>
+    <h1>FAQ</h1>
+    <S.FAQ>
+      <S.FAQQWrapper>
+        <S.FAQQIcon>Q</S.FAQQIcon>
+        <S.FAQQTxt>どのような言語を使用していますか？</S.FAQQTxt>
+      </S.FAQQWrapper>
+
+      <S.FAQAWrapper>
+        <S.FAQAIcon>A</S.FAQAIcon>
+        <S.FAQATxt>TypeScript + Reactです。</S.FAQATxt>
+      </S.FAQAWrapper>
+    </S.FAQ>
+
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.FAQQWrapper}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>なし</dt>
+        <dd></dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
 // jscpd:ignore-end
