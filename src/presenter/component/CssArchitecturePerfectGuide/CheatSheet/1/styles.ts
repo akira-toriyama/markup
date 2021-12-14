@@ -444,4 +444,90 @@ export const FAQATxt = styled.p`
   margin-bottom: 20px;
 `;
 
+export const Accordion = styled.dl``;
+
+export const AccordionTitle = styled.dt``;
+
+export const AccordionTitleInner = styled.button`
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  background-color: #e25c00;
+  border: 2px solid #e25c00;
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateY(-50%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: currentColor;
+    transform: translateY(-50%);
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    color: #e25c00;
+  }
+`;
+
+export const AccordionTitleInner2 = styled.button`
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  background-color: #e25c00;
+  border: 2px solid #e25c00;
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.25s;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateY(-50%);
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #fff;
+    color: #e25c00;
+  }
+`;
+
+export const AccordionDescription = styled.dd`
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+`;
+export const AccordionDescriptionInner = styled.p`
+  margin: 0;
+`;
+
 // jscpd:ignore-end

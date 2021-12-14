@@ -23,6 +23,7 @@ export const CheatSheet: React.VFC = () => (
     <Tab />
     <CTA />
     <FAQ />
+    <Accordion />
   </S.Area>
 );
 
@@ -518,6 +519,45 @@ const FAQ: React.VFC = () => (
     <details>
       <summary>コード</summary>
       <CssSyntaxHighlight>{S.FAQQWrapper}</CssSyntaxHighlight>
+    </details>
+    <details>
+      <summary>解説</summary>
+      <dl>
+        <dt>なし</dt>
+        <dd></dd>
+      </dl>
+    </details>
+  </S.Section>
+);
+
+const Accordion: React.VFC = () => (
+  <S.Section>
+    <h1>Accordion</h1>
+    <S.Accordion>
+      <S.AccordionTitle>
+        <S.AccordionTitleInner>
+          どのような言語を使用していますか？
+        </S.AccordionTitleInner>
+      </S.AccordionTitle>
+      <dd>
+        <br />
+      </dd>
+
+      <S.AccordionTitle>
+        <S.AccordionTitleInner2>
+          どのような言語を使用していますか？
+        </S.AccordionTitleInner2>
+      </S.AccordionTitle>
+      <S.AccordionDescription>
+        <S.AccordionDescriptionInner>
+          TypeScript + Reactです。
+        </S.AccordionDescriptionInner>
+      </S.AccordionDescription>
+    </S.Accordion>
+
+    <details>
+      <summary>コード</summary>
+      <CssSyntaxHighlight>{S.AccordionTitleInner}</CssSyntaxHighlight>
     </details>
     <details>
       <summary>解説</summary>
