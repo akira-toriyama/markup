@@ -460,6 +460,7 @@ export const AccordionTitleInner = styled.button`
   text-align: left;
   cursor: pointer;
   transition: 0.25s;
+
   &::before {
     content: "";
     position: absolute;
@@ -471,6 +472,7 @@ export const AccordionTitleInner = styled.button`
     background-color: currentColor;
     transform: translateY(-50%);
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -502,6 +504,7 @@ export const AccordionTitleInner2 = styled.button`
   text-align: left;
   cursor: pointer;
   transition: 0.25s;
+
   &::before {
     content: "";
     position: absolute;
@@ -526,6 +529,7 @@ export const AccordionDescription = styled.dd`
   padding: 15px;
   border: 1px solid #ddd;
 `;
+
 export const AccordionDescriptionInner = styled.p`
   margin: 0;
 `;
