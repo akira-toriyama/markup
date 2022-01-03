@@ -44,6 +44,7 @@ export const _Button = styled(Button)`
 `;
 
 export const IconButton = styled.a`
+  /* stylelint-disable */
   ${buttonStyle}
   position: relative;
 
@@ -53,6 +54,7 @@ export const IconButton = styled.a`
     right: 1rem;
     transform: translateY(-50%);
   }
+  /* stylelint-enable */
 `;
 
 export const NextLink = styled.a`
@@ -343,7 +345,6 @@ export const TabTxt = styled.span`
   border-bottom: 4px solid #efefef;
   text-decoration: none;
   transition: 0.25s;
-
   border-bottom-color: currentColor;
   color: #e25c00;
   pointer-events: none;

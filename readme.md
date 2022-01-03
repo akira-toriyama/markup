@@ -6,3 +6,6 @@
     <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
   </a>
 </p>
+
+CSS の学習向けのサイトです。
+やや CSS に寄せた書き方なので、React 特有の部分は少なめです。
