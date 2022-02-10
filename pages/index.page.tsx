@@ -13,6 +13,11 @@ const Page: NextPage = () => (
         <a>css-architecture-perfect-guide/cheat-sheet</a>
       </Link>
     </li>
+    <li>
+      <Link href="/every-layout/cheat-sheet">
+        <a>every-layout/cheat-sheet</a>
+      </Link>
+    </li>
   </ul>
 );
 
