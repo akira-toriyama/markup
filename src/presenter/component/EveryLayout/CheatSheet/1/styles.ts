@@ -19,8 +19,6 @@ export const Items1 = styled(Item)`
 `;
 
 // フォントサイズの相対性
-
-// ------------------------------------------------
 /**
  * 良くない例
  * 960px に意味があるか？
@@ -36,10 +34,38 @@ const BadText = styled.p`
 `;
 
 /**
- * `em` 親要素のfont-sizeを基準にする
  * `rem` 文書のルート要素、つまりhtml要素のfont-sizeを基準にする
+ *
+ * ブロック要素のサイズと相性が良い
  */
 export const Text = styled.p`
   font-size: calc(1rem + 0.5vw);
 `;
-// ------------------------------------------------
+
+/**
+ * `em` 親要素のfont-sizeを基準にする
+ * インライン要素と相性が良い
+ *
+ * ```tsx
+ * <h1>
+ *   タイトル<strong>!!</strong>
+ * </h1>
+ * ```
+ */
+export const Strong = styled.strong`
+  font-size: 1.125em;
+`;
+
+/**
+ * `em` 親要素のfont-sizeを基準にする
+ * インライン要素と相性が良い
+ *
+ * ```tsx
+ * <h1>
+ *   タイトル<strong>!!</strong>
+ * </h1>
+ * ```
+ */
+export const Little = styled.span`
+  font-size: 0.75em;
+`;
