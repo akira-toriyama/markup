@@ -7,6 +7,8 @@ import { randomColor } from "~/presenter/lib/randomColor";
 export const CheatSheet: React.VFC = () => (
   <S.Contents>
     <S.Items1 color={randomColor()}>Item1</S.Items1>
+
+    <S.Text>Text</S.Text>
   </S.Contents>
 );
 
