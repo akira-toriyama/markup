@@ -40,7 +40,7 @@
     "@types/jest": "27.4.1",
     "@types/react": "17.0.39",
     "@types/react-syntax-highlighter": "13.5.2",
-    "@types/styled-components": "5.1.23",
+    "@types/styled-components": "5.1.24",
     "babel-plugin-jsx-remove-data-test-id": "3.0.0",
     "babel-plugin-styled-components": "2.0.6",
     "conventional-changelog-conventionalcommits": "4.6.3",
