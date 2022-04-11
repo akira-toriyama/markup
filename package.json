@@ -38,7 +38,7 @@
     "@testing-library/react": "13.0.0",
     "@testing-library/react-hooks": "7.0.2",
     "@types/jest": "27.4.1",
-    "@types/react": "17.0.43",
+    "@types/react": "18.0.1",
     "@types/react-syntax-highlighter": "13.5.2",
     "@types/styled-components": "5.1.24",
     "babel-plugin-jsx-remove-data-test-id": "3.0.0",
