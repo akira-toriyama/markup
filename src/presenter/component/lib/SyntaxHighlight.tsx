@@ -12,6 +12,9 @@ const fmt = (p: StyledComponent) =>
     plugins: [parserCss],
   });
 
-export const CssSyntaxHighlight: React.FC = (props) => (
+type Props = {
+  children?: React.ReactNode;
+};
+export const CssSyntaxHighlight: React.FC<Props> = (props) => (
   <SyntaxHighlighter language="css">{fmt(props.children)}</SyntaxHighlighter>
 );
