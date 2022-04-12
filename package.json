@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "deploy:vercel": "yarn qualityCheck && next build",
+    "deploy:vercel": "yarn next build",
     "qualityCheck": "run-s qualityCheck:*",
     "qualityCheck:type": "tsc --project ./tsconfig.json --noEmit",
     "qualityCheck:unitTest": "jest --testPathIgnorePatterns .gitignore",
