@@ -1,0 +1,6 @@
+/* 一括変更可能用に定義 */
+:root {
+  --font-size-base: 1rem;
+  --font-size-biggish: 1.75rem;
+  --font-size-big: 2.25rem;
+}
