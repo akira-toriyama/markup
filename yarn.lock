@@ -6715,9 +6715,9 @@ nerf-dart@^1.0.0:
   integrity sha1-5tq3/r9a2Bbqgc9cYpxaDr3nLBo=
 
 next-pwa@^5.4.4:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-5.5.0.tgz#6b5e95e90fed1bc47702ee8692ac23515c0ef9f4"
-  integrity sha512-+u07p3I3depUzFHUFd379Fwo0HYP+0YPTYpZ57naUO5O1uepq0P+N/L+5Y4aA5XTlDGkbD+E5Th5J1br2TW5fw==
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-5.5.2.tgz#a592c49195001a8b5d21e0e8cf1190f4da2dc28d"
+  integrity sha512-NOZxIS/4Qa4lsPG99CNh3ZA1vfVJ3vpZjBvfouXOfWn0K9CLjBRZwGkJAcWsMWngSGoTN1hUkg97Pe+9xESzWQ==
   dependencies:
     babel-loader "^8.2.4"
     clean-webpack-plugin "^4.0.0"
@@ -9672,11 +9672,6 @@ workbox-cacheable-response@6.5.3:
   dependencies:
     workbox-core "6.5.3"
 
-workbox-core@6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.5.2.tgz#f5e06a22c6cb4651d3e13107443d972fdbd47364"
-  integrity sha512-IlxLGQf+wJHCR+NM0UWqDh4xe/Gu6sg2i4tfZk6WIij34IVk9BdOQgi6WvqSHd879jbQIUgL2fBdJUJyAP5ypQ==
-
 workbox-core@6.5.3:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-6.5.3.tgz#bca038a9ef0d7a634a6db2a60f45313ed22ac249"
@@ -9773,21 +9768,13 @@ workbox-webpack-plugin@^6.5.2:
     webpack-sources "^1.4.3"
     workbox-build "6.5.3"
 
-workbox-window@6.5.3:
+workbox-window@6.5.3, workbox-window@^6.5.2:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/workbox-window/-/workbox-window-6.5.3.tgz#4ade70056cb73477ef1cd8fea7cfd0ecbd825c7f"
   integrity sha512-GnJbx1kcKXDtoJBVZs/P7ddP0Yt52NNy4nocjBpYPiRhMqTpJCNrSL+fGHZ/i/oP6p/vhE8II0sA6AZGKGnssw==
   dependencies:
     "@types/trusted-types" "^2.0.2"
     workbox-core "6.5.3"
-
-workbox-window@^6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/workbox-window/-/workbox-window-6.5.2.tgz#46d6412cd57039bdf3d5dd914ad21fb3f98fe980"
-  integrity sha512-2kZH37r9Wx8swjEOL4B8uGM53lakMxsKkQ7mOKzGA/QAn/DQTEZGrdHWtypk2tbhKY5S0jvPS+sYDnb2Z3378A==
-  dependencies:
-    "@types/trusted-types" "^2.0.2"
-    workbox-core "6.5.2"
 
 wrap-ansi@^7.0.0:
   version "7.0.0"
