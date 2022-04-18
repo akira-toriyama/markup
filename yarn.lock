@@ -962,6 +962,13 @@
   dependencies:
     cosmiconfig "7.0.1"
 
+"@bird-studio/js-config@2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@bird-studio/js-config/-/js-config-2.1.4.tgz#a998b6139dbfa7a3a7af9f522da4c19f57176ea2"
+  integrity sha512-YT5/T/TdCmnQT89jzYG50+CIq7AERjy4uDDKFBd4X5G0qUkONDqW6AOsL6A996AVumwpTsoi57oLyWBLQxtj9A==
+  dependencies:
+    cosmiconfig "7.0.1"
+
 "@bird-studio/stylelint-config@1.1.4":
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@bird-studio/stylelint-config/-/stylelint-config-1.1.4.tgz#2f48f270f2e42896fbfb11fb1447394e6c6a52c5"
